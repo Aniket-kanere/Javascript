@@ -1,0 +1,26 @@
+<!DOCTYPE html>		
+<html>
+<body>
+  NAME: <input type ="text" id="demo">
+  <button onclick="display()">click to display name</button>
+
+  <script>
+   function display()
+   {
+   	 var x=document.getElementByID("demo").value;
+   	 document.getElementByID("q").innerHTML=x;
+   	 document.getElementByID("r").innerHTML=x;
+   	 document.getElementByID("s").innerHTML=x;
+   	 document.getElementByID("t").innerHTML=x;
+   	  document.getElementByID("u").innerHTML=x;
+   }	
+</script>
+
+<h1 id="q"></h1>
+<h2 id="r"></h2>
+<h3 id="s"></h3>
+<h4 id="t"></h4>
+<h5 id="u"></h5>
+
+</body>
+</html>
