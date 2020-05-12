@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<label>Mobile_no</label><input type="numbers" name="box" id="box"/>
+
+    <button type="button" onclick="check(box)"> click to check</button>
+    <script>
+        function check(box)
+        {
+           if("box.length==10")
+           {
+               document.write("Correct mobile number");
+           }
+           else{
+               document.write("Invalid mobile number");
+           }
+            
+        }
+        
+        var box = document.getElementById("box");
+
+    </script>
+
+            
+
+</body>
+</html>
