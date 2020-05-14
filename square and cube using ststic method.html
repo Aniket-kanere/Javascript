@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center><H1><I> <U> SQUARE AND CUBE USING STATIC METHODS </U></I></H1><br><br><br>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+class Math {
+  constructor(Number) {
+    this.no = Number;
+  }
+  static square (m) {
+    return m.no*m.no;
+  }
+  static cube (m) {
+    return m.no*m.no*m.no;
+  }
+}
+
+mymath = new Math("5");
+
+document.getElementById("demo").innerHTML = Math.square(mymath);
+document.getElementById("demo1").innerHTML = Math.cube(mymath);
+</script>
+
+</body>
+</html>

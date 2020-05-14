@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center><H1><I> <U> DISPLAY  DEPOSIT AMOUNT  </U></I></H1><br><br><br>
+
+
+<script>
+
+          class Account
+          {
+              constructor(n,b)
+              {
+                  this.Name = n;
+                  this.Balance = b;
+              }
+
+              deposit(amt)
+              {
+                  this.Balance+=amt;
+              }
+
+              display()
+              {
+                  var str = "Name :"+this.Name+"<br/>  Balance :"+this.Balance+"<br/><br/>";
+                  document.write(str);  
+              }
+          }
+
+          customer1 = new Account("ANIKET KANERE",259000);
+          customer2 = new Account("ARPIT RAUT",205000);
+          customer1.deposit(5000);
+          customer2.deposit(10000);
+          customer1.display();
+          customer2.display();
+
+        </script>
+      </body>
+      </html>
