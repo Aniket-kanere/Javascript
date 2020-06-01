@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+class student{
+    constructor(rn,n,m1,m2,m3)
+    {
+        this.rollno=rn
+        this.name=n
+        this.marks1=m1
+        this.marks2=m2
+        this.marks3=m3
+        this.total=function()
+        {
+            return this.marks1+this.marks2+this.marks3
+        }
+        this.percentage=function()
+        {
+            return this.total()*100/300
+        }
+    }
+
+}
+var a=new student(1,"ANIKET",76,85,67)
+var b=new student(2,"LABESH",62,76,87)
+document.getElementById("demo").innerHTML="ROLL NO:"+a.rollno+"   "+"NAME: "+a.name+"  "+"Sub-1:"+a.marks1+"  "+"Sub-2:"+a.marks2+" "+"Sub-3:"+a.marks3+" "+"TOTAL ::"+a.total()+" "+"PERCENTAGE:"+a.percentage()
+document.getElementById("demo1").innerHTML="ROLL NO:"+b.rollno+" "+"NAME: "+b.name+" "+"Sub-1:"+b.marks1+" "+"Sub-2:"+b.marks2+" "+"Sub-3:"+b.marks3+" "+"TOTAL:"+b.total()+" "+"PERCENTAGE:"+b.percentage()
+</script>
+
+</body>
+</html>
