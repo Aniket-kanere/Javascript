@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 12</title>
+        <!--  Create three check boxes showing book name and price.
+             Create a text box. As per selection of check box ,
+              text box should show total of selected price.-->
+       
+    </head>
+    <body > 
+       <center>
+        <label>Chernobyl=200rs</label>
+        <input type="checkbox" name="book" value=200><br/><br>
+        <label>Assasins creed=300rs</label>
+        <input type="checkbox" name="book" value=300><br/><br>
+        <label>Game of Thrones=400rs</label>
+        <input type="checkbox" name="book" value=400><br/><br>
+        <input type="text" id="t">
+        <button type="button" onclick="total()">Total</button><br/></center>
+        
+        <script>
+           function total(){
+               
+               var a = document.getElementsByName("book");
+               var price=0
+              for(let i=0;i<a.length;i++)
+               {
+                   if(a[i].checked)
+                   {
+                       price=parseInt(a[i].value)+parseInt(price)
+                   }
+               }
+               document.getElementById("t").value=price
+           }
+        </script>
+    </body>
+</html>

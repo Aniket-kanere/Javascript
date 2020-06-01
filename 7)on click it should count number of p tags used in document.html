@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <style> /* Write at least 3 paragraph about yourself. 
+    Create a button on click it should count number of p tags used in document.
+     Also give blue background colour to all p tags.*/
+   </style>  
+      
+    
+ 
+    
+<body><center>
+  <p id="1">My Name IS ANIKET KANERE</p>
+  <p id="2">I'M FROM INDIA</p>
+  <p id="3">AND I'M NOT A TERRORIST</p></center>
+<script>
+var a= document.getElementsByTagName("p")
+for(let i=0;i<a.length;i++)
+{
+    a[i].style.background="blue"
+}
+var b=a.length
+document.write(b)
+
+</script>
+
+
+</body>
+</html>
